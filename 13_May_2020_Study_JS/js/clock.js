@@ -10,7 +10,6 @@ const clockContainer = document.querySelector(".clock");
         const seconds = time.getSeconds();
         //문자열과 변수명을 결합 : 백틱
         const now = `${hours<10 ? `0${hours}` : hours } : ${minutes < 10 ? `0${minutes}` : minutes} : ${seconds < 10 ? `0${seconds}` : seconds}`; 
-        
 
         clockText.innerHTML = now;
     }
