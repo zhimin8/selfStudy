@@ -1,3 +1,6 @@
+// const / var / let 변수의 차이점
+
+
 // http의 url + 우리가 그려줄 html의 태그를 쿼리 셀렉터로 받아 변수로 쓸것임
 // 1)영역잡기 : 두 개의 변수를 하나의 영역에 저장해줌.
 const body = document.querySelector("body"),
@@ -29,13 +32,14 @@ function saveBackground(url, city, country, name){
     };
     localStorage.setItem("background", JSON.stringify(imageObject)); //json으로 변환해서 저장을 해줘야함 (String화가 된다.)
      // 저장했으니깐 불러와야지!!!!
-
+    loadBackground();
 }
 
 function getBackGround(){
     // API URL로 요청하고, 반환받아서, localStorage에 저장하고
-
-    // fetch(IMAGEURL)
+    // then은 fetch() 가 완료되기를 막아주는 역할. then!
+ 
+    // fetch(IMAGEURL) 
     // .then(function(response) {
     //     return response.json();
     // })
