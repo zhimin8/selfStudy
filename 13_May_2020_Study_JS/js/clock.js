@@ -1,5 +1,4 @@
-const clockContainer = document.querySelector(".clock");
-    clockText = clockContainer.querySelector(".clock_text");
+const clockContainer = document.querySelector(".js-clock .clock__text");
 
     //현재시간을 알아내자
     function getTime(){
@@ -11,7 +10,7 @@ const clockContainer = document.querySelector(".clock");
         //문자열과 변수명을 결합 : 백틱
         const now = `${hours<10 ? `0${hours}` : hours } : ${minutes < 10 ? `0${minutes}` : minutes} : ${seconds < 10 ? `0${seconds}` : seconds}`; 
 
-        clockText.innerHTML = now;
+        clockContainer.innerText = now;
     }
 
 function init(){

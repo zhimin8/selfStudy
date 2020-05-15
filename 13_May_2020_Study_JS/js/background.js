@@ -4,7 +4,7 @@
 // http의 url + 우리가 그려줄 html의 태그를 쿼리 셀렉터로 받아 변수로 쓸것임
 // 1)영역잡기 : 두 개의 변수를 하나의 영역에 저장해줌.
 const body = document.querySelector("body"),
-    locationText = document.querySelector(".location_text");
+    locationText = document.querySelector(".js-location span");
 
 const API_KEY = "_C9tI3s4P1Um2YJJQ7SP-fBF1P_ld2t1TaJNyFcZDB8";
 
